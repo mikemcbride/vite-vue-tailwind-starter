@@ -1,10 +1,10 @@
-import {render, fireEvent} from '@testing-library/vue'
+import { render, fireEvent } from '@testing-library/vue'
 import { describe, it, expect } from 'vitest'
 import Counter from '../Counter.vue'
 
 describe('Counter', () => {
     // render the component once.
-    const {getByRole, getByTestId, getByText} = render(Counter)
+    const { getByRole, getByTestId, getByText } = render(Counter)
 
     it('increments the counter when increment button is clicked', async () => {
         const incrementButton = getByRole('button', { name: 'increment' })
@@ -13,7 +13,7 @@ describe('Counter', () => {
         await fireEvent.click(incrementButton)
         await fireEvent.click(incrementButton)
 
-        let expectedText = "Count: 2"
+        let expectedText = 'Count: 2'
         let element = getByTestId('count-value')
 
         expect(element.innerHTML).toBe(expectedText)
@@ -26,7 +26,7 @@ describe('Counter', () => {
         await fireEvent.click(decrementButton)
         await fireEvent.click(decrementButton)
 
-        let expectedText = "Count: 0"
+        let expectedText = 'Count: 0'
         let element = getByTestId('count-value')
         expect(element.innerHTML).toBe(expectedText)
     })
