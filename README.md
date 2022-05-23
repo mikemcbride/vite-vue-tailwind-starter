@@ -10,6 +10,7 @@ By using this template, you've got a full featured setup ready to go for buildin
 -   [Vue 3](https://vuejs.org) for the app framework
 -   [Tailwind CSS](https://tailwindcss.com) for styling
 -   [Vitest](https://vitest.dev) and [Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro) for testing
+-   [Prettier](https://prettier.io) formatting on commit with husky and lint-staged
 
 It comes with a `<Counter>` component that has increment/decrement buttons to update a "count" value. This component has tests built out so you have a reference for how to set up future tests.
 
