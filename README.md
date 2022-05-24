@@ -17,6 +17,6 @@ By using this template, you've got a full featured setup ready to go for buildin
 
 `/api` routes are automatically proxied for use with running serverless functions locally alongside the app with `vercel dev`. I use Vercel, so this setup is optimized to make it easy for me. If I run `vc dev` instead of `npm run dev`, and the project is configured, Vercel will run the UI on a separate port and proxy API calls to the node app running on `:3000`.
 
-It comes with a `<Counter>` component that has increment/decrement buttons to update a "count" value. This component has tests built out so you have a reference for how to set up future tests.
+It comes with a `<CounterButtons>` component that has increment/decrement buttons to update a "count" value. This component has tests built out so you have a reference for how to set up future tests.
 
 `<MyComponent>` file exists but it just displays some text - "Let's get started". This is the file you'll use for prototyping. Rename as you see fit.

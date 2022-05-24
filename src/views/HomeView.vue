@@ -1,11 +1,11 @@
 <script setup>
 import MyComponent from '@/components/MyComponent.vue'
-import Counter from '@/components/Counter.vue'
+import CounterButtons from '@/components/CounterButtons.vue'
 </script>
 
 <template>
     <main class="space-y-8">
         <MyComponent />
-        <Counter />
+        <CounterButtons />
     </main>
 </template>

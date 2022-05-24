@@ -1,10 +1,10 @@
 import { render, fireEvent } from '@testing-library/vue'
 import { describe, it, expect } from 'vitest'
-import Counter from '../Counter.vue'
+import CounterButtons from '../CounterButtons.vue'
 
-describe('Counter', () => {
+describe('CounterButtons', () => {
     // render the component once.
-    const { getByRole, getByTestId, getByText } = render(Counter)
+    const { getByRole, getByTestId } = render(CounterButtons)
 
     it('increments the counter when increment button is clicked', async () => {
         const incrementButton = getByRole('button', { name: 'increment' })
