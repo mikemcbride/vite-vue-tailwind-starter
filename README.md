@@ -14,6 +14,8 @@ By using this template, you've got a full featured setup ready to go for buildin
 -   [Vitest](https://vitest.dev) and [Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro) for testing.
 -   [Prettier](https://prettier.io) formatting on commit with husky and lint-staged.
 -   [eslint](https://eslint.org) for linting
+-   [Headless UI](https://headlessui.dev) components
+-   [Heroicons](https://heroicons.com) for icons
 
 `/api` routes are automatically proxied for use with running serverless functions locally alongside the app with `vercel dev`. I use Vercel, so this setup is optimized to make it easy for me. If I run `vc dev` instead of `npm run dev`, and the project is configured, Vercel will run the UI on a separate port and proxy API calls to the node app running on `:3000`.
 
