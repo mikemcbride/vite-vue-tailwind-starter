@@ -8,9 +8,14 @@ By using this template, you've got a full featured setup ready to go for buildin
 
 -   [Vite](https://vitejs.dev) as the dev server.
 -   [Vue 3](https://vuejs.org) for the app framework.
+-   [Pinia](https://pinia.vuejs.org) for state management
+-   [Vue Router](https://router.vuejs.org) for routing
 -   [Tailwind CSS](https://tailwindcss.com) for styling.
 -   [Vitest](https://vitest.dev) and [Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro) for testing.
 -   [Prettier](https://prettier.io) formatting on commit with husky and lint-staged.
+-   [eslint](https://eslint.org) for linting
+
+`/api` routes are automatically proxied for use with running serverless functions locally alongside the app with `vercel dev`. I use Vercel, so this setup is optimized to make it easy for me. If I run `vc dev` instead of `npm run dev`, and the project is configured, Vercel will run the UI on a separate port and proxy API calls to the node app running on `:3000`.
 
 It comes with a `<Counter>` component that has increment/decrement buttons to update a "count" value. This component has tests built out so you have a reference for how to set up future tests.
 
