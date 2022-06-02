@@ -1,5 +1,6 @@
-import { render, fireEvent } from '@testing-library/vue'
 import { describe, it, expect } from 'vitest'
+import { render } from '@testing-library/vue'
+import userEvent from '@testing-library/user-event'
 import CounterButtons from '../CounterButtons.vue'
 
 describe('CounterButtons', () => {
@@ -10,11 +11,11 @@ describe('CounterButtons', () => {
         const incrementButton = getByRole('button', { name: 'increment' })
 
         // Dispatch a native click event to our increment button element twice
-        await fireEvent.click(incrementButton)
-        await fireEvent.click(incrementButton)
+        await userEvent.click(incrementButton)
+        await userEvent.click(incrementButton)
 
-        let expectedText = 'Count: 2'
-        let element = getByTestId('count-value')
+        const expectedText = 'Count: 2'
+        const element = getByTestId('count-value')
 
         expect(element.innerHTML).toBe(expectedText)
     })
@@ -23,11 +24,11 @@ describe('CounterButtons', () => {
         const decrementButton = getByRole('button', { name: 'decrement' })
 
         // Click decrement button twice, expect it to be 0
-        await fireEvent.click(decrementButton)
-        await fireEvent.click(decrementButton)
+        await userEvent.click(decrementButton)
+        await userEvent.click(decrementButton)
 
-        let expectedText = 'Count: 0'
-        let element = getByTestId('count-value')
+        const expectedText = 'Count: 0'
+        const element = getByTestId('count-value')
         expect(element.innerHTML).toBe(expectedText)
     })
 })
