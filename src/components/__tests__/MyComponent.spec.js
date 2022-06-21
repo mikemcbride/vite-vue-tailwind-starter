@@ -10,7 +10,7 @@ describe('MyComponent', () => {
     // rather than re-rendering each time.
     render(MyComponent)
 
-    // also declare and variables or utility functions we use in our tests here.
+    // also declare any variables or utility functions we use in our tests here.
     const defaultText = "Let's get started."
 
     // start our tests
