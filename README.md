@@ -22,3 +22,13 @@ By using this template, you've got a full featured setup ready to go for buildin
 It comes with a `<CounterButtons>` component that has increment/decrement buttons to update a "count" value. This component has tests built out so you have a reference for how to set up future tests.
 
 `<MyComponent>` file exists but it just displays some text - "Let's get started". This is the file you'll use for prototyping. Rename as you see fit.
+
+## Running Locally
+
+### Just the UI
+
+If you only need to run the UI (a Vue 3 SPA), you only need to run `npm run dev`. You won't get any API calls proxied on the `/api` route, but if you don't need this, you're good!
+
+### Vercel with serverless functions
+
+To run the UI and get API calls proxied on the `/api` endpoint to Vercel serverless functions, you can run `vc dev` (or `vercel dev` if you prefer verbosity). You'll need to set up your project in Vercel first, but once you do (make sure you select Vite as the framework - it should detect it), it will spin up the UI and serverless routes on different ports and proxy everything on `:3000` to the correct ports automagically 🪄 ✨
